@@ -1,0 +1,76 @@
+/*input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font: 100% proxima-nova,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+td{
+    padding: 15px;
+}
+table{
+    width: 80.5556%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+tr {
+    background-color: thistle;
+    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+    //color: white;
+}
+button{
+    width: 200px;
+    height: 80px;    
+    background-color: #863d8d;    
+    color: white;
+    border: none;
+    font: 100% proxima-nova,Helvetica,Arial,sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+textarea{
+    width: 100%;
+    height: auto;
+}*/
+
+.c i {
+    float: left;
+    /* font-size: 1.25em; */
+    max-height: 1.25em;
+    line-height: 0px;
+    padding:0;    
+    text-align: center;
+}
+.c .collapsible-header i{
+    
+    /* font-size: 1.25em; */
+    max-height: 1.25em;
+    line-height: 0px;
+    padding: .8em 5%;
+    text-align: center;
+    margin-left: -10%;
+    margin-right: 0;
+    
+}
+
+.c .collapsible{
+    box-shadow: none;
+    
+}
+
+.c .edit_card_panel {
+    margin: 0;   
+}
+
+.input-field .prefix.active {
+     color: #000000;
+     z-index: 999;
+   } 
+
+.c .dropdown-content li > span {
+    font-size: 1rem;
+    color: #000000;
+    display: block;
+    padding: 1rem 1rem;
+}
