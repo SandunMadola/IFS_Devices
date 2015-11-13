@@ -123,32 +123,25 @@
 
     </div>
     <!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>-->
-    <button data-target="modal1" class="btn modal-trigger">Now</button>
-    <button data-target="modal2" class="btn modal-trigger">Later</button>
+    <button data-target="modal1" class="btn modal-trigger hide-on-small-only">Now</button>
+    <button data-target="modal2" class="btn modal-trigger hide-on-small-only">Later</button>
     <!-- Modal Structure -->
 
-    <form>
+    <form class="hide-on-small-only">
         <!--now button start-->
 
         <!-- Modal Structure -->
-        <div id="modal1" class="modal" style="width: 320px; max-height: 100%;height: 55%;">
+        <div id="modal1" class="modal" style="width: 360px; max-height: 100%; height: 75%;" >
             <div class="modal-content">
                 <h4>Borrow Now</h4>
-                <br>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="un" type="text" maxlength="6" ng-model="now.userName" length="6" required>
-                                <label for="un">Username</label>
-                            </div>
-                        </div>
 
-                    </form>
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="un" type="text" class="validate" maxlength="6" ng-model="now.userName" length="6" required>
+                    <label for="un">Username</label>
                 </div>
 
-                <div class="input-field col s12">
+                <div class="input-field">
                     <i class="material-icons " style="alignment-adjust: before-edge">timelapse</i>
                     <select ng-model="now.to">
                         <option value="" disabled selected>Duration </option>
@@ -162,10 +155,10 @@
                         <option value="2week">2 weeks</option> 
                         <option value="3week">3 weeks</option> 
                         <option value="1month">1 month</option> 
-                        <option value="2month">2 months</option> 
+
                     </select>
 
-                    <label style="alignment-adjust: middle"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration</label>
+                    <!--<label style="alignment-adjust: middle"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration</label>-->
                 </div> 
                 <br> <br> <br> <br>
                 <p>{{now}}</p>
@@ -173,10 +166,10 @@
             <div class="modal-footer">
                 <a  class=" modal-action modal-close btn waves-effect waves-purple waves-light" style="float: none; text-align: center">Submit</a>
             </div>
-        </div>            
+        </div>   
         <!--now button end-->
         <!--later button start-->
-        <div id="modal2" class="modal" style="width: 320px;max-height: 100%;height: 75%;">
+        <div id="modal2" class="modal" style="width: 360px; max-height: 100%;height: 75%;">
             <div class="modal-content">
                 <h4>Borrow Later</h4>
                 <div class="input-field">
@@ -203,7 +196,7 @@
                         <option value="2week">2 weeks</option> 
                         <option value="3week">3 weeks</option> 
                         <option value="1month">1 month</option> 
-                        <option value="2month">2 months</option> 
+
                     </select>              
                 </div> 
             </div>
@@ -215,6 +208,93 @@
 
         <!--later button end-->
     </form>
+    <!--show on small-->
+
+    <!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>-->
+    <button data-target="modal11" class="btn modal-trigger show-on-small-only hide-on-med-and-up">Now</button>
+    <button data-target="modal22" class="btn modal-trigger show-on-small-only hide-on-med-and-up">Later</button>
+    <!-- Modal Structure -->
+
+    <form class="show-on-small-only hide-on-med-and-up">
+        <!--now button start-->
+
+        <!-- Modal Structure -->
+        <div id="modal11" class="modal" style="width: 100%; max-height: 100%; height: 100%;" >
+            <div class="modal-content">
+                <h4>Borrow Now</h4>
+           
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="un" type="text" class="validate" maxlength="6" ng-model="now.userName" length="6" required>
+                            <label for="un">Username</label>
+                        </div>
 
 
+                <div class="input-field ">
+                    <i class="material-icons " style="alignment-adjust: before-edge">timelapse</i>
+                    <select ng-model="now.to">
+                        <option value="" disabled selected>Duration </option>
+                        <option value="1day">1 day</option>
+                        <option value="2day">2 days</option>
+                        <option value="3day">3 days</option>                     
+                        <option value="4day">4 days</option>
+                        <option value="5day">5 days</option> 
+                        <option value="6day">6 days</option> 
+                        <option value="1week">1 week</option> 
+                        <option value="2week">2 weeks</option> 
+                        <option value="3week">3 weeks</option> 
+                        <option value="1month">1 month</option> 
+
+                    </select>
+
+<!--                    <label style="alignment-adjust: middle"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration</label>-->
+                </div> 
+                
+                <p>{{now}}</p>
+            </div>
+            <div class="modal-footer">
+                <a  class=" modal-action modal-close btn waves-effect waves-purple waves-light" style="float: none; text-align: center">Submit</a>
+            </div>
+        </div>   
+        <!--now button end-->
+        <!--later button start-->
+        <div id="modal22" class="modal" style="width: 100%;max-height: 100%;height: 100%;">
+            <div class="modal-content">
+                <h4>Borrow Later</h4>
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="un2" type="text" class="validate" ng-model="later.userName" required maxlength="6" length="6">
+                    <label for="un2">User Name</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">today</i>
+                    <input id="calender" type="text" class="datepicker" ng-model="later.from" required><!--type="date"-->
+                    <label for="calender">From</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons">timelapse</i>
+                    <select ng-model="later.to" required>
+                        <option value="" disabled selected>Duration</option>
+                        <option value="1day">1 day</option>
+                        <option value="2day">2 days</option>
+                        <option value="3day">3 days</option>                     
+                        <option value="4day">4 days</option>
+                        <option value="5day">5 days</option> 
+                        <option value="6day">6 days</option> 
+                        <option value="1week">1 week</option> 
+                        <option value="2week">2 weeks</option> 
+                        <option value="3week">3 weeks</option> 
+                        <option value="1month">1 month</option> 
+
+                    </select>              
+                </div> 
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="modal-action modal-close btn waves-effect waves-purple waves-light" style="float: none">Submit</button>
+            </div>
+            <p>{{later}}</p>
+        </div>
+
+        <!--later button end-->
+    </form>
 </section>
