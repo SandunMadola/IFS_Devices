@@ -8,18 +8,20 @@
 
 
     <div class="main_content"> 
-        <div class ="sub_content">
-            <div id="wrap">
+        <div class ="sub_content"><!--sub_content-->
+            <!--#wrap-->
 
+                <h3 class="left">All Devices </h3>
+                
+                <div class="right"> <!--list_style_buttons-->
+                    <a href="#/thumbnail" id="gridview" class="switcher hide-on-small-only left"><i class="material-icons">grid_on</i></a>
+                    <a href="#/devices" id="listview" class="switcher active hide-on-small-only left"><i class="material-icons">view_list</i></a>
 
-                <span class="list_style_buttons">
-                    <a href="#/thumbnail" id="gridview" class="switcher hide-on-small-only"><i class="material-icons">grid_on</i></a>
-                    <a href="#/devices" id="listview" class="switcher active hide-on-small-only"><i class="material-icons">view_list</i></a>
+                </div>
+                
+                
 
-                </span>
-                <h1>All Devices </h1>
-
-            </div>
+            
         </div>
         <div class="ignore"></div>
         <div class="ifs_banner" ng-controller="deviceCtrl">
