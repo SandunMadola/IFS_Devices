@@ -5,7 +5,7 @@ homeCtrls.controller('homeCtrl', ['$scope', function ($scope) {
     }]);
 
 homeCtrls.controller('deviceCtrl', ['$scope', '$http', function ($scope, $http) {
-        $http.get('js/data.json').success(function (data) {
+        $http.get('server/devices.php').success(function (data) {
             $scope.devices = data;
         });
         $scope.popup = $(document).ready(function () {
