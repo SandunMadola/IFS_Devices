@@ -2,49 +2,36 @@
 
 .ignore{
     height: 3.25em;
-    /*position: relative;*/
 }
 div {
     border: 0;
     font: inherit;
-    /*    font-size: 80%;*/
     padding: 0 1.5px 0 1.5px;
     vertical-align: baseline;
     display: block;
 }
-.main_nav,.main_section/*.main_aside*/{
+.main_nav,.main_section{
     display: block;
     float: left;
     margin-right: -100%;
     height: 100%;
-    min-height: 100%;
-    /*margin-top: 3.25em;*/
+    min-height: 100%;    
 }
 
-.main_section {
-    /*-webkit-transition: all .3s ease-in-out;*/
-
+.main_section { 
     width: 80.5556%;
     background-color: #E7E9EC;
-
-    /*padding-top: 3.25em;*/
     margin-left: 19.4444%; 
-    /*margin-left: 22.22217777%;*/
-
-    /*transition: all .3s ease-in-out;*/
-
 }
 
 .main_content {
     background-color: #E7E9EC;
-    /* width: initial; */
 }
 .sub_content {
     position: relative;
     margin: 0 0 1em;
     float: right;
     width: 100%;
-    /* margin: 15px 22px; */
 }
 .b_2 .sub_content{
     position: relative;
@@ -91,13 +78,7 @@ li.device.cf.ng-scope {
     margin: 0;
     padding: 0;
 }
-/*a:-webkit-any-link {
-    color: 
-        
-    -webkit-link;
-    /* text-decoration: underline; 
-    cursor: auto;
-}*/
+
 #h1 h1 {
     font-weight: normal;
     font-size: 1.9em;
@@ -137,9 +118,6 @@ ul{
     /*padding: 0.3em 2%; */
 }
 
-/*a:hover{
-    color: black;
-}*/
 
 .ifs_bannerT{
     padding:.8em 5%;
@@ -273,7 +251,7 @@ html[xmlns] .clearfix { display: block; }
     -webkit-transition: all 0.3s ;
     display: block;
     float: left;
-  
+
 }
 
 .device:last-child {
