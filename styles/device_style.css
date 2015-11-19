@@ -43,40 +43,15 @@
     line-height: 1;
     margin-right: 5px;
 }
-/*.b_1 .sub_content {
-    position: relative;
-    margin: 0px 0px 1em;
-    float: right;
-     width: 103.9%; 
-}
-.b_1 #wrap {
-     border-bottom: 1px solid #B6BDBE; 
-     margin-bottom: 25px; 
-    padding-top: 2px;
-    position: relative;
-}
-.b_1 .list_style_buttons {
-    position: absolute;
-    right: 0px;
-}
-.b_1 #wrap h1 {
-    margin-left: 20px;
-}*/
-/*.b_1 h1 {
-    font-size: 1.5rem;
-    line-height: 10%;
-    margin: 2.1rem 0px 1.68rem 200px;
-    font-weight: bold;
-    text-align: left;
-}*/
 
 
-/////////////////////////
+
+/*
 
 .ignore{
     height: 3.25em;
     position: relative;
-}
+} */
 
 .b_1 section {
     display: block;
@@ -173,41 +148,11 @@
     color: #fff;
     /* background-color: #863d8d; */
     text-shadow: -1px 1px #863d8d;
-    /* height: 2.5em; */
-    /* display: inline-block; */
-    /*    margin: 0 0 0 0;*/
-    /* padding: 10px 20px; */
-    /* text-align: center; */
-    /* font-size: 18px; */
-    /* border: none; */
-    /* width: 10em; */
-    /* float: right; */
-    /* bottom: 0%; */
-    /* box-sizing: border-box; */
-    /* float: right; */
-    /* right: 0px; */
-    /* margin: 0px; */
-    /* top: 190px; */
-    /* width: 90px; */
-    /* height: 70px; */
-    /* margin-right: 10px; */
-/*     margin-bottom: 20px; */
-    /* z-index: 15; */
-    /* border-radius: 3px 0px 0px 3px; */
-    /* top: 0; */
-    /* right: 0; */
-    /* top: -190px; */
-    /* margin-top: 20px; */
-    /* margin-right: 1px; */
+   
 }
 
 .b_1 .waves-effect  {/*.b_1.Now.waves-effect waves-light  btn*/
-    /* position: relative; */
-    /* float: right; */
-    /* z-index: 90; */
-    /* margin-bottom: 2px; */
-    /* top: -190px; */
-    /* width: 110%; */
+    
     color: #fff;
     background-color: #863d8d;
     text-shadow: -1px 1px #863d8d;
@@ -320,7 +265,7 @@ with animation
     text-decoration: none;
 }
 
-//with animation 
+/*with animation */
 .b_1 .devicelist li:hover {
     background: #FDF6E3;
     opacity: 1;
@@ -362,7 +307,7 @@ with animation
     -webkit-transition: all 0.3s ;
     display: block;
     float: left;
-    //padding-left: 120px !important;
+   
 }
 
 .device:last-child {
