@@ -3,7 +3,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-$conn = new mysqli("localhost", "root", "root", "ifs_devices");
+$conn = new mysqli("localhost", "root", "", "ifs_devices");
 
 $result = $conn->query("SELECT * FROM device_model");
 
