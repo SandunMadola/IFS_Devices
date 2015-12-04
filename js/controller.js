@@ -20,7 +20,7 @@ homeCtrls.controller('deviceCtrl', ['$scope', '$http', function ($scope, $http) 
     }]);
 
 homeCtrls.controller('detailsCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
-        $http.get('js/data.json').success(function (data) {
+        $http.get('server/devices.php').success(function (data) {
             $scope.devices = data;
             $scope.whichItem = $routeParams.itemId;
         });
