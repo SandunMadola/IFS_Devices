@@ -1,5 +1,13 @@
 var homeCtrls = angular.module('homeCtrls', []);
 
+homeCtrls.controller('staticCtrl',['$scope',function ($scope){
+        $scope.searching = "Type Here";
+        $scope.search_bar = true;
+        $scope.searched = function (){
+            $scope.search_bar = !$scope.search_bar;
+        };
+}]);
+
 homeCtrls.controller('homeCtrl', ['$scope', function ($scope) {
 
     }]);

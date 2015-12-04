@@ -10,7 +10,7 @@
         <link href="styles/style.css" rel="stylesheet" type="text/css"/>
     </head>
 
-    <body>
+    <body ng-controller="staticCtrl">
         <!--start header-->
         <nav class="main_header">
             <div class="nav-wrapper">
@@ -28,7 +28,25 @@
                         <li class="left"><a href="#/devices"><i class="material-icons">devices</i></a></li>
                         <li class="left"><a href="#/request"><i class="material-icons">add_circle</i></a></li>                                        
                     </ul>
-                    <a class="right" href="#"><i class="material-icons">search</i></a>
+
+                    <i  class="material-icons right" ng-show="search_bar"  ng-click="searched()">search</i>                   
+                    <form class="show-on-small-only hide-on-med-and-up search_class right col s12" ng-hide="search_bar">
+                        <div class="input-field">
+                            <input id="search" type="search" ng-attr-placeholder="{{searching}}" required>
+                            <label for="search">
+                                <i class="material-icons " ng-click="searched()">close</i>                                
+                            </label>
+                        </div>
+                    </form>
+                    <form class="hide-on-small-only right col s12" ng-hide="search_bar">
+                        <div class="input-field">
+                            <input id="search" type="search" ng-attr-placeholder="{{searching}}" required>
+                            <label for="search">
+                                <i class="material-icons" ng-click="searched()">close</i>                                
+                            </label>
+                        </div>
+                    </form>                    
+                    <!--<a class="right" href="#"><i class="material-icons">search</i></a>-->
                 </div>
             </div>
         </nav>
@@ -129,7 +147,7 @@
         <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
         <script src="angular/angular.min.js"></script>
         <script src="angular/angular-route.min.js"></script>
-        
+
         <script src="js/script.js" type="text/javascript"></script>       
         <script src="js/app.js"></script>
         <script src="js/controller.js"></script>
